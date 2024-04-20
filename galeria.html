@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>GALERIA</title>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Baby store</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" onclick="seleccionar()">Baby store</a></li>
+                    <li><a href="Login.html" onclick="seleccionar()">Iniciar Sesion</a></li>
+                    <li><a href="galeria.html" onclick="seleccionar()">Galeria</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+<body>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/cuna.webp" alt="">
+                    </div>
+                    <p class="descripcion">Cuna de madera</p>
+                    <span class="precio">$ 259.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/Baby-Clothes-PNG-Photo.png" alt="">
+                    </div>
+                    <p class="descripcion" id>Conjunto jardinero</p>
+                    <span class="precio">$ 20.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/FZ9942-001-1_1024.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE TEMPO
+                    </p>
+                    <span class="precio">$ 79.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/conjunto1.webp" alt="">
+                    </div>
+                    <p class="descripcion">Conjunto De boda</p>
+                    <span class="precio">$ 20.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/eezy-s-2-plus-beach-blue-blk-cybex-1-64f62fb09cd5b_5000x_569a8b61-573e-42bb-824a-da132c5e5761_2000x.webp" alt="">
+                    </div>
+                    <p class="descripcion">Coche</p>
+                    <span class="precio">$ 150.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/TP125_800x.webp" alt="">
+                    </div>
+                    <p class="descripcion">Pack de Bañera</p>
+                    <span class="precio">$ 49.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/Babymonitorlite_azul_1-min.webp" alt="">
+                    </div>
+                    <p class="descripcion">Camara </p>
+                    <span class="precio">$ 29.990</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Imagenes/silla-de-auto-convertible-sirona-gi-isize-360-268658_5000x_3d7719ec-e918-42c4-8f1c-0e9fe62e8202_1080x.webp" alt="">
+                    </div>
+                    <p class="descripcion">Silla de auto</p>
+                    <span class="precio">$ 309.990</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="Imagenes/Imagenes/297238-panal-natural-care-disney-baby-talla-rn-34-unidades-.webp" alt="" id="img">
+                <h2 id="modelo">Pañales</h2>
+                <p id="descripcion">c/u</p>
+
+                <span class="precio" id="precio">$ 7.990</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Colores</label>
+                        <select name="" id="">
+                            <option value="">negro</option>
+                            <option value="">Blanco</option>
+                            <option value="">Celeste</option>
+                            <option value="">Rojo</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
